@@ -1,0 +1,10 @@
+^D:\GITHUB\PLATFORMER C++\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SD:/GitHub/platformer c++" "-BD:/GitHub/platformer c++" --check-stamp-file "D:/GitHub/platformer c++/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
